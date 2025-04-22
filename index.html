@@ -1,0 +1,1027 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elara Jewels</title>
+
+    <!-- Lato Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  </head>
+
+  <body class="bg-white" style="font-family: 'Lato', sans-serif">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm border-b">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Hamburger Menu (Mobile view) -->
+          <div class="md:hidden flex items-center">
+            <button id="hamburger-icon" class="text-gray-800">
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <img
+              class="h-10 sm:h-20"
+              src="./images/site_logo1.png"
+              alt="Elara Jewels Logo"
+            />
+          </div>
+
+          <!-- Desktop Navigation Links -->
+          <div
+            class="hidden md:flex space-x-6 font-medium text-gray-800 text-sm uppercase"
+          >
+           
+            <a href="#" class="hover:text-pink-600">Home</a>
+<!-- Shop by Category Dropdown -->
+<div class="relative">
+  <button id="shopBtn" class="hover:text-pink-600 transition-colors duration-200 text-sm uppercase font-medium flex items-center gap-1">
+    Shop
+    <i class="fas fa-chevron-down ml-1 text-xs"></i>
+  </button>
+
+  <div id="shopDropdown" class="dropdown-content hidden absolute left-0 mt-2 w-56 bg-white border rounded shadow-lg z-50">
+    <ul class="py-2 text-gray-700 text-sm">
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">All</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Rings</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Necklaces & Pendants</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Bracelets</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Earrings</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Anklets</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Other Categories</a></li>
+    </ul>
+  </div>
+</div>
+
+            <!-- Categories Dropdown -->
+<div class="relative">
+  <button id="categoriesBtn" class="hover:text-pink-600 transition-colors duration-200 text-sm uppercase font-medium flex items-center gap-1">
+    Categories
+    <span class="bg-teal-600 text-white text-xs px-2 py-0.5 rounded-full ml-1">SALE</span>
+    <i class="fas fa-chevron-down ml-1 text-xs"></i>
+  </button>
+
+  <div id="categoriesDropdown"
+  class= "dropdown-content hidden absolute left-0 mt-2 w-56 bg-white border rounded shadow-lg z-50"  >
+    <ul class="py-2 text-gray-700 text-sm">
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Traditional</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Modern</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Casual</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Bridal</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Everyday Wear</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Office Wear</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Festive Special</a></li>
+    </ul>
+  </div>
+</div>
+
+           <!-- Products Dropdown -->
+<!-- Products Dropdown -->
+<div class="relative">
+  <button id="productsBtn" class="hover:text-pink-600 transition-colors duration-200 text-sm uppercase font-medium flex items-center gap-1">
+    Products
+    <span class="bg-pink-600 text-white text-xs px-2 py-0.5 rounded-full ml-1">HOT</span>
+    <i class="fas fa-chevron-down ml-1 text-xs"></i>
+  </button>
+
+  <div id="productsDropdown" class="dropdown-content hidden absolute left-0 mt-2 w-56 bg-white border rounded shadow-lg z-50">
+    <ul class="py-2 text-gray-700 text-sm">
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Featured</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">New Arrivals</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Best Sellers</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Limited Edition</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Under ₹5000</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Gift Ideas</a></li>
+    </ul>
+  </div>
+</div>
+
+
+           <!-- Top Deals Dropdown -->
+<div class="relative">
+  <button id="dealsBtn" class="hover:text-pink-600 transition-colors duration-200 text-sm uppercase font-medium flex items-center gap-1">
+    Top Deals
+    <i class="fas fa-chevron-down ml-1 text-xs"></i>
+  </button>
+
+  <div id="dealsDropdown" class="dropdown-content hidden absolute left-0 mt-2 w-56 bg-white border rounded shadow-lg z-50">
+
+    <ul class="py-2 text-gray-700 text-sm">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-pink-100 hover:text-pink-700 transition">Valentine's Collection</a>
+      </li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Sky High</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Magic of Tradition</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">The Bhumi Collection</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Wings of Wonder</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Cherry Pop Collection</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Love in Paris</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Convertible Collection</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 transition">Just Arrived</a></li>
+    </ul>
+  </div>
+</div>
+
+          <!-- Elements Dropdown -->
+<div class="relative">
+  <button id="elementsBtn" class="hover:text-pink-600 transition-colors duration-200 text-sm uppercase font-medium flex items-center gap-1">
+    Elements
+    <i class="fas fa-chevron-down ml-1 text-xs"></i>
+  </button>
+
+  <div id="elementsDropdown" class="dropdown-content hidden absolute left-0 mt-2 w-56 bg-white border rounded shadow-lg z-50">
+
+    <ul class="py-2 text-gray-700 text-sm">
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 hover:text-pink-700 transition">Testimonials</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 hover:text-pink-700 transition">Gallery</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 hover:text-pink-700 transition">Gift Cards</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 hover:text-pink-700 transition">FAQs</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 hover:text-pink-700 transition">Care Guide</a></li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+          <!-- Icons -->
+       
+        <!-- Search Button -->
+        <div class="flex items-center space-x-6 text-gray-800">
+          <button id="openSearch">
+            <i class="fas fa-search text-lg hover:text-pink-600"></i>
+          </button>
+        
+          <button>
+            <i class="far fa-user text-lg hover:text-pink-600"></i>
+          </button>
+          <div class="relative" id="navbar-wishlist">
+  <button id="wishlistNavbarBtn" aria-label="Wishlist">
+    <i id="navbar-heart-icon" class="far fa-heart text-lg hover:text-pink-600 transition-all duration-300"></i>
+    <span id="wishlist-count"
+      class="absolute -top-2 -right-2 bg-pink-500 text-white text-xs font-semibold px-1.5 py-0.5 rounded-full hidden">
+      0
+    </span>
+  </button>
+</div>
+          <div class="relative">
+            <button class="relative" onclick="openCart()">
+              <i class="fas fa-shopping-cart text-lg hover:text-pink-600"></i>
+              <span id="cartCount" class="absolute -top-2 -right-2 bg-pink-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center hidden">
+                0
+              </span>
+            </button>
+            
+            
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </nav>
+    <!-- Search Bar Overlay -->
+<div id="searchBar" class="fixed top-5 left-1/2 transform -translate-x-1/2 w-11/12 md:w-1/2 bg-white border border-gray-300 rounded-lg shadow-md px-4 py-3 flex items-center space-x-2 z-50 hidden">
+  <input
+    type="text"
+    placeholder='Search "Bracelets"'
+    class="flex-grow outline-none text-gray-700 placeholder-gray-400"
+  />
+  <button id="clearSearch" class="text-gray-500 hover:text-red-500 text-2xl">
+    &times;
+  </button>
+</div>
+
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div
+      id="mobile-menu"
+      class="md:hidden fixed inset-0 bg-black bg-opacity-50 z-40 hidden"
+    >
+      <div class="bg-white w-64 h-full p-6 space-y-4">
+        <a href="#" class="text-gray-800 hover:text-pink-600">Home</a>
+        <a href="#" class="text-gray-800 hover:text-pink-600">Shop</a>
+        <a href="#" class="text-gray-800 hover:text-pink-600">Categories</a>
+        <a href="#" class="text-gray-800 hover:text-pink-600">Products</a>
+        <a href="#" class="text-gray-800 hover:text-pink-600">Top Deals</a>
+        <a href="#" class="text-gray-800 hover:text-pink-600">Elements</a>
+      </div>
+    </div>
+    <!-- Hero Carousel Section -->
+    <div class="relative overflow-hidden">
+      <!-- Slides -->
+      <div class="carousel relative w-full h-[600px]">
+        <!-- Slide 1 -->
+        <div
+          class="slide active absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out bg-[#f8f8f8]"
+        >
+          <div
+            class="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-7xl px-4 mx-auto"
+          >
+          <div class="md:w-1/2 text-center md:text-left space-y-5 transition-all duration-1000 ease-out transform opacity-0 translate-y-5 slide-text">
+            <h1 class="text-4xl md:text-5xl">Finest Jewellery Collection</h1>
+              <p class="text-gray-600 text-lg font-medium">
+                Timeless Jewellery for Every Occasion
+              </p>
+              <a
+              href="#"
+              class="inline-block bg-pink-600 text-white px-6 py-3 rounded mt-6 text-sm uppercase font-semibold hover:bg-pink-800 transition"
+            >
+              Shop Now
+            </a>
+            </div>
+
+            <div class="md:w-1/2">
+              <img
+                src="./images/heroimg1.png"
+                alt="Jewelry Banner"
+                class="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div
+          class="slide absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out bg-[#f8f8f8]"
+        >
+          <div
+            class="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-7xl px-4 mx-auto"
+          >
+          <div class="md:w-1/2 text-center md:text-left space-y-5 transition-all duration-1000 ease-out transform opacity-0 translate-y-5 slide-text">
+            <h1 class="text-4xl md:text-5xl">Exclusive Bridal Collection</h1>
+              <p class="text-gray-600 text-lg font-medium">
+                Sparkle on Your Special Day
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-pink-600 text-white px-6 py-3 rounded mt-6 text-sm uppercase font-semibold hover:bg-pink-800 transition"
+                >
+                Explore Now
+              </a>
+            </div>
+
+            <div class="md:w-1/2">
+              <img
+                src="./images/heroimg-2.png"
+                alt="Bridal Jewelry Banner"
+                class="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div
+          class="slide absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out bg-[#f8f8f8]"
+        >
+          <div
+            class="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-7xl px-4 mx-auto"
+          >
+          <div class="md:w-1/2 text-center md:text-left space-y-5 transition-all duration-1000 ease-out transform opacity-0 translate-y-5 slide-text">
+            <h1 class="text-4xl md:text-5xl text-gray-900">
+                Diamond Jewellery Collection
+              </h1>
+              <p class="text-gray-600 text-lg font-medium">
+                Shine your story with Elara’s dream diamonds
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-pink-600 text-white px-6 py-3 rounded mt-6 text-sm uppercase font-semibold hover:bg-pink-800 transition"
+                >
+                Shop Now
+              </a>
+            </div>
+
+            <div class="md:w-1/2">
+              <img
+                src="./images/heroimg3-Photoroom.png"
+                alt="Diamond Jewelry Banner"
+                class="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more slides here if needed -->
+
+        <!-- Prev Button -->
+        <button
+          id="prev"
+          class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-600 text-white p-3 rounded hover:bg-gray-800 z-20"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <!-- Next Button -->
+        <button
+          id="next"
+          class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-600 text-white p-3 rounded hover:bg-gray-800 z-20"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Our Products section -->
+    <section id="products" class="py-16 bg-white opacity-0 translate-y-5 transition-all duration-1000" style="font-family: 'Lato', sans-serif">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-7">
+          <h2 class="text-3xl text-black-400 font-semibold">Our Products</h2>
+          <p class="mt-2 text-gray-800">Explore the Latest Jewellery Pieces in Our Weekly Collection</p>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Product Card -->
+<div class="relative group text-center" id="navbar-wishlist">
+  <button class="absolute top-3 right-3 wishlist-btn z-10" 
+    data-product-id="prod-1" 
+    data-title="Diamond Band Ring" 
+    data-category="Chatelaine, Necklaces" 
+    data-price="Rs 20,000"
+    data-image="/images/prod-1.png"
+
+    aria-label="Add to wishlist">
+    <div class="bg-white rounded-full shadow-md p-2 hover:bg-pink-100 transition">
+      <i class="far fa-heart text-gray-400 hover:text-pink-500 text-lg transition-all duration-300"></i>
+    </div>
+  </button>
+
+  <!-- Product Image -->
+  <img
+    src="./images/prod-1.png"
+    alt="Diamond Band Ring"
+    class="mx-auto w-70 h-80 object-contain transition-transform duration-300 group-hover:scale-105"
+    id="product-image-prod-1" 
+  />
+
+  <!-- Product Details -->
+  <h4 class="mt-4 text-gray-800 font-medium">Diamond Band Ring</h4>
+  <p class="text-sm text-gray-500">Chatelaine, Necklaces</p>
+  <p class="text-yellow-700 font-bold mt-1">Rs 20,000</p>
+  <!-- Add to Cart button -->
+ <button onclick="addToCart(this)"  data-product-id="product-001"
+ class="mt-3 bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 rounded-md shadow-md transition">
+  Add to Cart
+</button>
+  
+</div>
+
+
+        
+<!-- Product Card 2 -->
+  <div class="relative group text-center">
+    <button class="absolute top-3 right-3 wishlist-btn z-10" 
+      data-product-id="prod-2" 
+      data-title="Diamond Band Ring" 
+      data-category="Brooches, Flatware" 
+      data-price="Rs 15,000"
+      data-image="/images/prod-2.jpg"
+      aria-label="Add to wishlist">
+      <div class="bg-white rounded-full shadow-md p-2 hover:bg-pink-100 transition">
+        <i class="far fa-heart text-gray-400 hover:text-pink-500 text-lg transition-all duration-300"></i>
+      </div>
+    </button>
+
+    <img src="/images/prod-2.jpg" alt="Diamond Band Ring"
+      class="mx-auto w-70 h-80 object-contain transition-transform duration-300 group-hover:scale-105" />
+
+    <h4 class="mt-4 text-gray-800 font-medium">Diamond Band Ring</h4>
+    <p class="text-sm text-gray-500">Brooches, Flatware</p>
+    <p class="text-yellow-700 font-bold mt-1">Rs 15,000</p>
+    <button onclick="addToCart(this)" data-product-id="product-002" class="mt-3 bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 rounded-md shadow-md transition">
+      Add to Cart
+    </button>
+  </div>
+
+ <!-- Product Card 3 -->
+  <div class="relative group text-center">
+    <button class="absolute top-3 right-3 wishlist-btn z-10" 
+      data-product-id="prod-3" 
+      data-title="Dissent Collar Earring" 
+      data-category="Necklaces, Runners" 
+      data-price="Rs 25,000"
+      data-image="/images/prod-3.jpg"
+      aria-label="Add to wishlist">
+      <div class="bg-white rounded-full shadow-md p-2 hover:bg-pink-100 transition">
+        <i class="far fa-heart text-gray-400 hover:text-pink-500 text-lg transition-all duration-300"></i>
+      </div>
+    </button>
+
+    <img src="/images/prod-3.jpg" alt="Dissent Collar Earring"
+      class="mx-auto w-70 h-80 object-contain transition-transform duration-300 group-hover:scale-105" />
+
+    <h4 class="mt-4 text-gray-800 font-medium">Dissent Collar Earring</h4>
+    <p class="text-sm text-gray-500">Necklaces, Runners</p>
+    <p class="text-yellow-700 font-bold mt-1">Rs 25,000</p>
+    <button onclick="addToCart(this)" data-product-id="product-003" class="mt-3 bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 rounded-md shadow-md transition">
+      Add to Cart
+    </button>
+  </div>
+          
+          <!-- Product Card 4 -->
+  <div class="relative group text-center">
+    <button class="absolute top-3 right-3 wishlist-btn z-10" 
+      data-product-id="prod-4" 
+      data-title="Long Earrings Women" 
+      data-category="Necklaces, Tiara" 
+      data-price="Rs 30,000"
+      data-image="/images/prod-4.jpg"
+      aria-label="Add to wishlist">
+      <div class="bg-white rounded-full shadow-md p-2 hover:bg-pink-100 transition">
+        <i class="far fa-heart text-gray-400 hover:text-pink-500 text-lg transition-all duration-300"></i>
+      </div>
+    </button>
+
+    <img src="/images/prod-4.jpg" alt="Long Earrings Women"
+      class="mx-auto w-70 h-80 object-contain transition-transform duration-300 group-hover:scale-105" />
+
+    <h4 class="mt-4 text-gray-800 font-medium">Long Earrings Women</h4>
+    <p class="text-sm text-gray-500">Necklaces, Tiara</p>
+    <p class="text-yellow-700 font-bold mt-1">Rs 30,000</p>
+    <button onclick="addToCart(this)" data-product-id="product-004" class="mt-3 bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 rounded-md shadow-md transition">
+      Add to Cart
+    </button>
+  </div>
+     <!-- Product Card 5 -->
+<div class="relative group text-center">
+  <button class="absolute top-3 right-3 wishlist-btn z-10" 
+    data-product-id="prod-5" 
+    data-title="Women’s Bijou Ear" 
+    data-category="Brooches, Wall Decor" 
+    data-price="Rs 15,000"
+    data-image="/images/prod-5.jpg"
+    aria-label="Add to wishlist">
+    <div class="bg-white rounded-full shadow-md p-2 hover:bg-pink-100 transition">
+      <i class="far fa-heart text-gray-400 hover:text-pink-500 text-lg transition-all duration-300"></i>
+    </div>
+  </button>
+
+  <img src="/images/prod-5.jpg" alt="Women’s Bijou Ear"
+    class="mx-auto w-70 h-80 object-contain transition-transform duration-300 group-hover:scale-105" />
+
+  <h4 class="mt-4 text-gray-800 font-medium">Women’s Bijou Ear</h4>
+  <p class="text-sm text-gray-500">Brooches, Wall Decor</p>
+  <p class="text-yellow-700 font-bold mt-1">Rs 15,000</p>
+  <button onclick="addToCart(this)" data-product-id="product-005" class="mt-3 bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 rounded-md shadow-md transition">
+    Add to Cart
+  </button>
+</div>
+
+      
+     <!-- Product Card 6 -->
+<div class="relative group text-center">
+  <button class="absolute top-3 right-3 wishlist-btn z-10" 
+    data-product-id="prod-6" 
+    data-title="Sterling Silver Genuine" 
+    data-category="Rugs, Wall Decor" 
+    data-price="Rs 40,000"
+    data-image="/images/prod-6.jpg"
+    aria-label="Add to wishlist">
+    <div class="bg-white rounded-full shadow-md p-2 hover:bg-pink-100 transition">
+      <i class="far fa-heart text-gray-400 hover:text-pink-500 text-lg transition-all duration-300"></i>
+    </div>
+  </button>
+
+  <img src="/images/prod-6.jpg" alt="Sterling Silver Genuine"
+    class="mx-auto w-70 h-80 object-contain transition-transform duration-300 group-hover:scale-105" />
+
+  <h4 class="mt-4 text-gray-800 font-medium">Sterling Silver Genuine</h4>
+  <p class="text-sm text-gray-500">Rugs, Wall Decor</p>
+  <p class="text-yellow-700 font-bold mt-1">Rs 40,000</p>
+  <button onclick="addToCart(this)" data-product-id="product-006" class="mt-3 bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 rounded-md shadow-md transition">
+    Add to Cart
+  </button>
+</div>
+
+       
+      <!-- Product Card 7 -->
+<div class="relative group text-center">
+  <button class="absolute top-3 right-3 wishlist-btn z-10" 
+    data-product-id="prod-7" 
+    data-title="Women’s Bijou Ear" 
+    data-category="Brooches, Wall Decor" 
+    data-price="Rs 15,000"
+    data-image="/images/prod-7.jpg"
+    aria-label="Add to wishlist">
+    <div class="bg-white rounded-full shadow-md p-2 hover:bg-pink-100 transition">
+      <i class="far fa-heart text-gray-400 hover:text-pink-500 text-lg transition-all duration-300"></i>
+    </div>
+  </button>
+
+  <img src="/images/prod-7.jpg" alt="Women’s Bijou Ear"
+    class="mx-auto w-70 h-80 object-contain transition-transform duration-300 group-hover:scale-105" />
+
+  <h4 class="mt-4 text-gray-800 font-medium">Women’s Bijou Ear</h4>
+  <p class="text-sm text-gray-500">Brooches, Wall Decor</p>
+  <p class="text-yellow-700 font-bold mt-1">Rs 15,000</p>
+  <button onclick="addToCart(this)" data-product-id="product-007" class="mt-3 bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 rounded-md shadow-md transition">
+    Add to Cart
+  </button>
+</div>
+
+    
+  <!-- Product Card 8 -->
+<div class="relative group text-center">
+  <button class="absolute top-3 right-3 wishlist-btn z-10" 
+    data-product-id="prod-8" 
+    data-title="ZMens Womens 10k" 
+    data-category="Candles, Wall Decor" 
+    data-price="Rs 45,000"
+    data-image="/images/prod-8.jpg"
+    aria-label="Add to wishlist">
+    <div class="bg-white rounded-full shadow-md p-2 hover:bg-pink-100 transition">
+      <i class="far fa-heart text-gray-400 hover:text-pink-500 text-lg transition-all duration-300"></i>
+    </div>
+  </button>
+
+  <img src="/images/prod-8.jpg" alt="ZMens Womens 10k"
+    class="mx-auto w-70 h-80 object-contain transition-transform duration-300 group-hover:scale-105" />
+  <h4 class="mt-4 text-gray-800 font-medium">ZMens Womens 10k</h4>
+  <p class="text-sm text-gray-500">Candles, Wall Decor</p>
+  <p class="text-yellow-700 font-bold mt-1">Rs 45,000</p>
+  <button onclick="addToCart(this)" data-product-id="product-008" class="mt-3 bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 rounded-md shadow-md transition">
+    Add to Cart
+  </button>
+</div>
+</section>
+
+<!-- Cart Sidebar -->
+<div id="cartSidebar" class="fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50 overflow-y-auto">
+  <div class="p-4 flex justify-between items-center border-b">
+    <h3 class="text-xl font-semibold">My Cart</h3>
+    <button onclick="closeCart()" class="text-gray-500 hover:text-red-500 text-3xl">&times;</button>
+  </div>
+  <div id="cartItems" class="p-4 space-y-4">
+    <!-- Dynamic Cart Items Here -->
+  </div>
+</div>
+
+<!-- Backdrop -->
+<div id="cartBackdrop" onclick="closeCart()" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+
+
+      <section class="py-12 bg-gray-100 animate-fadeInUp" style="font-family: 'Lato', sans-serif">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 px-6">
+          
+          <!-- Left Content -->
+          <div class="md:w-1/2 text-left transition-all duration-1000 ease-out transform opacity-0 translate-y-5 fade-on-scroll">
+            <h2 class="text-3xl text-black-400 font-semibold">
+              We Create Luxury Products That Are Available At Our Store
+            </h2>
+            <p class="mt-4 text-gray-800">
+              We believe in crafting timeless luxury, while acknowledging the distractions of fleeting pleasures. Our vision is to offer beauty with purpose—designed for those who value quality, elegance, and the joy that endures beyond the moment.
+            </p>
+            <a
+              href="#"
+              class="inline-block bg-pink-600 text-white px-6 py-3 rounded mt-6 text-sm uppercase font-semibold hover:bg-pink-800 transition"
+            >
+              Shop Now
+            </a>
+          </div>
+      
+          <!-- Right Images -->
+          <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <!-- Product Card -->
+            <div class="text-center bg-white border border-gray-200 rounded-lg shadow-lg p-4 transition-transform hover:scale-105">
+              <img
+                src="./images/image9 (2).png"
+                alt="Heart Necklace"
+                class="w-full h-64 object-contain"
+              />
+              <h3 class="mt-4 text-lg font-semibold text-gray-900">Heart Necklace</h3>
+              <p class="text-sm text-gray-700">Rs 24,999</p>
+            </div>
+      
+            <div class="text-center bg-white border border-gray-200 rounded-lg shadow-lg p-4 transition-transform hover:scale-105">
+              <img
+                src="./images/image10.jpg"
+                alt="Diamond Bracelet"
+                class="w-full h-64 object-contain"
+              />
+              <h3 class="mt-4 text-lg font-semibold text-gray-900">Diamond Bracelet</h3>
+              <p class="text-sm text-gray-700">Rs 70,000</p>
+            </div>
+      
+            <div class="text-center bg-white border border-gray-200 rounded-lg shadow-lg p-4 transition-transform hover:scale-105">
+              <img
+                src="./images/silverring.jpg"
+                alt="Silver Rings"
+                class="w-full h-64 object-contain"
+              />
+              <h3 class="mt-4 text-lg font-semibold text-gray-900">Silver Rings</h3>
+              <p class="text-sm text-gray-700">Rs 56,000</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Top Selling Items -->
+      <section class="w-full bg-white py-12 opacity-0 translate-y-5 transition-all duration-1000 fade-on-scroll">
+        <div class="flex justify-center items-center mb-10">
+          <img src="./images/top-selling logo.png" alt="Top Selling Items Logo" class="h-14 w-auto">
+          <h2 class="text-3xl font-bold">Top Selling Items</h2>
+        </div>
+      
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+            <!-- CARD 1 -->
+            <div class="bg-white border rounded-xl p-6 shadow-md hover:shadow-lg transition-transform hover:scale-105 text-center">
+              <img src="./images/imag11.jpg" alt="Ring" class="h-48 mx-auto object-contain" />
+              <h3 class="text-lg font-semibold mt-4">Gold Casual Ring</h3>
+              <div class="flex justify-center mt-2 text-yellow-400 text-sm">★★★★★</div>
+              <p class="mt-2 font-semibold text-gray-800">Rs 30,000</p>
+            </div>
+      
+            <!-- CARD 2 -->
+            <div class="bg-white border rounded-xl p-6 shadow-md hover:shadow-lg transition-transform hover:scale-105 text-center relative">
+              <img src="./images/image12.jpg" alt="Earrings" class="h-48 mx-auto object-contain" />
+              <h3 class="text-lg font-semibold mt-4">Floweret Cluster Diamond Stud Earrings</h3>
+              <div class="flex justify-center mt-2 text-yellow-400 text-sm">★★★★★</div>
+              <p class="mt-2 font-semibold text-gray-800">Rs 40,000</p>
+            </div>
+      
+            <!-- CARD 3 -->
+            <div class="bg-white border rounded-xl p-6 shadow-md hover:shadow-lg transition-transform hover:scale-105 text-center relative">
+              <img src="./images/image 14.jpg" alt="Gold Ring" class="h-48 mx-auto object-contain" />
+              <h3 class="text-lg font-semibold mt-4">Malabar Yellow Gold Ring</h3>
+              <div class="flex justify-center mt-2 text-yellow-400 text-sm">★★★★★</div>
+              <p class="mt-2 font-semibold text-gray-800">Rs 45,000</p>
+            </div>
+      
+            <!-- CARD 4 -->
+            <div class="bg-white border rounded-xl p-6 shadow-md hover:shadow-lg transition-transform hover:scale-105 text-center relative">
+              <img src="./images/image13.jpg" alt="Diamond Ring" class="h-48 mx-auto object-contain" />
+              <h3 class="text-lg font-semibold mt-4">Kisna Real Diamond Gold Ring</h3>
+              <div class="flex justify-center mt-2 text-yellow-400 text-sm">★★★★★</div>
+              <p class="mt-2 font-semibold text-gray-800">Rs 35,000</p>
+            </div>
+      
+            <!-- CARD 5 -->
+            <div class="bg-white border rounded-xl p-6 shadow-md hover:shadow-lg transition-transform hover:scale-105 text-center">
+              <img src="./images/image15.jpg" alt="Earrings" class="h-48 mx-auto object-contain" />
+              <h3 class="text-lg font-semibold mt-4">Kisna Gold Earring for Women</h3>
+              <div class="flex justify-center mt-2 text-yellow-400 text-sm">★★★★★</div>
+              <p class="mt-2 font-semibold text-gray-800">Rs 50,000</p>
+            </div>
+          <!-- CARD 6 -->
+            <div class="bg-white border rounded-xl p-6 shadow-md hover:shadow-lg transition-transform hover:scale-105 text-center">
+              <img src="./images/Diamond band ring2.png" alt="Diamond Band Ring" class="h-48 mx-auto object-contain" />
+              <h3 class="text-lg font-semibold mt-4">Diamond Band Ring</h3>
+              <div class="flex justify-center mt-2 text-yellow-400 text-sm">★★★★★</div>
+              <p class="mt-2 font-semibold text-gray-800">Rs 60,000</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+            
+
+        <!-- Testimonials Section -->
+        <section class="bg-gray-50 py-20 font-[Lato]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl font-bold text-gray-800">What Our Customers Say</h2>
+              <p class="mt-4 text-lg text-gray-600">Real stories from clients who shine with Elara Jewels</p>
+            </div>
+        
+            <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+              <!-- Testimonial Card -->
+              <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 relative">
+                <svg class="absolute top-6 right-6 w-8 h-8 text-amber-400 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M7.17 6.17a4 4 0 1 0 5.66 5.66L13 14h-4a5 5 0 1 1 0-10h.17zm10 0a4 4 0 1 0 5.66 5.66L23 14h-4a5 5 0 1 1 0-10h.17z" />
+                </svg>
+                <div class="flex items-center gap-4 mb-4">
+                  <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ananya Mehra" class="w-16 h-16 rounded-full object-cover border-2 border-amber-400" />
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Ananya Mehra</h3>
+                    <span class="text-sm text-gray-500">Delhi, India</span>
+                  </div>
+                </div>
+                <p class="text-gray-700 text-base leading-relaxed italic">
+                  "The craftsmanship is stunning. I wear my diamond ring every day—it sparkles just like the day I bought it!"
+                </p>
+              </div>
+        
+              <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 relative">
+                <svg class="absolute top-6 right-6 w-8 h-8 text-amber-400 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M7.17 6.17a4 4 0 1 0 5.66 5.66L13 14h-4a5 5 0 1 1 0-10h.17zm10 0a4 4 0 1 0 5.66 5.66L23 14h-4a5 5 0 1 1 0-10h.17z" />
+                </svg>
+                <div class="flex items-center gap-4 mb-4">
+                  <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Rohan Kapoor" class="w-16 h-16 rounded-full object-cover border-2 border-amber-400" />
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Rohan Kapoor</h3>
+                    <span class="text-sm text-gray-500">Mumbai, India</span>
+                  </div>
+                </div>
+                <p class="text-gray-700 text-base leading-relaxed italic">
+                  "My wife absolutely loved the necklace I got from Elara Jewels. Classy, elegant, and worth every rupee!"
+                </p>
+              </div>
+        
+              <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 relative">
+                <svg class="absolute top-6 right-6 w-8 h-8 text-amber-400 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M7.17 6.17a4 4 0 1 0 5.66 5.66L13 14h-4a5 5 0 1 1 0-10h.17zm10 0a4 4 0 1 0 5.66 5.66L23 14h-4a5 5 0 1 1 0-10h.17z" />
+                </svg>
+                <div class="flex items-center gap-4 mb-4">
+                  <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priya Sharma" class="w-16 h-16 rounded-full object-cover border-2 border-amber-400" />
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Priya Sharma</h3>
+                    <span class="text-sm text-gray-500">Bangalore, India</span>
+                  </div>
+                </div>
+                <p class="text-gray-700 text-base leading-relaxed italic">
+                  "Beautiful designs and smooth delivery. I get compliments every time I wear their earrings!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+<!-- NEW ARRIVALS SECTION  -->
+
+<section class="bg-white-100 py-16 px-6 lg:px-20 opacity-0 translate-y-5 transition-all duration-1000 fade-on-scroll">
+  <div class="max-w-7xl mx-auto">
+            <!-- Section Heading -->
+            <div class="text-center mb-12">
+              <h2 class="text-3xl text-black-400 font-semibold">New Arrivals</h2>
+              <p class="mt-2 text-gray-600 text-sm md:text-base">Discover the latest additions to our handcrafted jewellery collection</p>
+            </div>
+        
+            <!-- Product Grid -->
+            <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+              <!-- Product Card -->
+              <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="./images/prod-3.jpg" alt="Ring" class="w-full h-64 object-cover">
+                <div class="p-4">
+                  <h3 class="font-semibold text-lg text-gray-800">Elegant Diamond Ring</h3>
+                  <p class="text-sm text-gray-500 mt-1">Crafted with premium white gold</p>
+                  <p class="mt-2 font-bold text-pink-600">Rs 30,000</p>
+                </div>
+              </div>
+              
+        
+              <!-- Product Card -->
+              <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="./images/prod-5.jpg" alt="Necklace" class="w-full h-64 object-cover">
+                <div class="p-4">
+                  <h3 class="font-semibold text-lg text-gray-800">Royal Pearl Necklace</h3>
+                  <p class="text-sm text-gray-500 mt-1">Pure elegance and sophistication</p>
+                  <p class="mt-2 font-bold text-pink-600">Rs 25,000</p>
+                </div>
+              </div>
+        
+              <!-- Product Card -->
+              <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="./images/prod-4.jpg" alt="Bracelet" class="w-full h-64 object-cover">
+                <div class="p-4">
+                  <h3 class="font-semibold text-lg text-gray-800">Golden Charm Bracelet</h3>
+                  <p class="text-sm text-gray-500 mt-1">Handcrafted with 22k gold</p>
+                  <p class="mt-2 font-bold text-pink-600">Rs 15,000</p>
+                </div>
+              </div>
+        
+              <!-- Product Card -->
+              <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="./images/prod-7.jpg" alt="Earrings" class="w-full h-64 object-cover">
+                <div class="p-4">
+                  <h3 class="font-semibold text-lg text-gray-800">Crystal Drop Earrings</h3>
+                  <p class="text-sm text-gray-500 mt-1">Add sparkle to your style</p>
+                  <p class="mt-2 font-bold text-pink-600">Rs 10,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+           
+
+<!-- Info Features Section -->
+
+        <section class="bg-gray-200 py-16">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
+              
+              <!-- Feature 1 -->
+              <div>
+                <div class="flex justify-center mb-4">
+                  <img src="./images/delivery-truck.png" alt="Delivery Icon" class="w-14 h-14 opacity-70" />
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Free Standard Delivery</h3>
+                <p class="mt-2 text-gray-600">
+                  Enjoy complimentary shipping on all orders, ensuring your jewelry arrives safely and on time
+                </p>
+              </div>
+
+              <!-- Feature 2 -->
+              <div>
+                <div class="flex justify-center mb-4">
+                  <img src="./images/product-return.png" alt="Returns Icon" class="w-10 h-10 opacity-70" />
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Easy Returns and Refund</h3>
+                <p class="mt-2 text-gray-600">
+                  Enjoy hassle-free returns and quick refunds. If you're not completely satisfied, we’ll make it right—no questions asked
+                </p>
+              </div>
+
+              <!-- Feature 3 -->
+              <div>
+                <div class="flex justify-center mb-4">
+                  <img src="./images/secure-payment2.png" alt="Secure Icon" class="w-14 h-14 opacity-70" />
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">100% Secure Checkout</h3>
+                <p class="mt-2 text-gray-600">
+                  Shop with confidence. Your payment information is processed securely with advanced encryption and data protection standards
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- Contact Us section -->
+        <section class="bg-gradient-to-b from-gray-100 to-white pt-16 pb-8 px-6 opacity-0 translate-y-5 transition-all duration-1000 fade-on-scroll">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-2 text-black">Get in touch with Elara Jewels</h2>
+            <p class="text-center text-gray-700 mb-10">
+              We'd love to hear from you! Reach out for custom jewelry designs, consultations, or any queries—we're here to help.
+            </p>
+        
+            <!-- Make both columns full height using flex -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+              <!-- Contact Info -->
+              <div class="bg-pink-600 text-white rounded-lg p-8 shadow-md h-full flex flex-col">
+                <h3 class="text-xl font-semibold mb-4">Contact Details</h3>
+                <p class="mb-6 text-sm">Feel the sparkle of elegance with Elara Jewels. Let’s connect.</p>
+                <ul class="space-y-4 text-sm">
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt text-white"></i>
+                    <span>501 Elara Ave, MG Road, Bengaluru, KA 560001</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-phone text-white"></i>
+                    <span>+91 1234567894</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-mobile-alt text-white"></i>
+                    <span>+91 9876543212</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-white"></i>
+                    <span>elarajewels02@gmail.com</span>
+                  </li>
+                </ul>
+              </div>
+        
+              <!-- Contact Form -->
+              <form class="bg-white rounded-lg p-8 shadow-md space-y-6 h-full flex flex-col justify-between">
+                <div class="space-y-6">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                      <input type="text" placeholder="Your Full Name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-700 outline-none" />
+                    </div>
+                    <div>
+                      <label class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                      <input type="email" placeholder="you@example.com" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-700 outline-none" />
+                    </div>
+                  </div>
+        
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Subject</label>
+                    <input type="text" placeholder="Let's connect for..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-700 outline-none" />
+                  </div>
+        
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea rows="4" placeholder="Write your message..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-700 outline-none"></textarea>
+                  </div>
+                </div>
+        
+                <button type="submit" class="inline-block bg-pink-600 text-white px-6 py-3 rounded text-sm uppercase font-semibold hover:bg-pink-800 transition">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        
+        
+        
+        
+        <footer class="bg-black text-gray-300 mt-16">
+          <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+              <!-- Brand Info -->
+              <!-- Elara Jewels Section -->
+              <div class="md:pr-12">
+                <h2 class="text-2xl font-bold">Elara Jewels</h2>
+              <p class="mt-4 text-base text-gray-300">
+                Experience timeless elegance and luxury with our handcrafted jewellery</p>
+
+              <div class="mt-6 space-y-4 text-base text-gray-300">
+                <div class="flex items-start gap-4">
+                  <img src="./images/location.png" alt="Location Icon" class="w-6 h-6">
+                  <p>501 Elara Ave, MG Road, Bengaluru, KA 560001</p>        
+                </div>
+                <div class="flex items-center gap-4">
+                  <img src="./images/telephone.png" alt="Phone Icon" class="w-6 h-6">
+                  <span>+91 1234567894</span>
+                </div>
+                <div class="flex items-center gap-4">
+                  <img src="./images/phone.png" alt="Mobile Icon" class="w-6 h-6">
+                  <span>+91 9876543212</span>
+                </div>
+                <div class="flex items-center gap-4">
+                  <img src="./images/mail (2).png" alt="Email Icon" class="w-5 h-5">
+                  <span>elarajewels02@gmail.com</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+              <h3 class="text-2xl font-semibold mb-4">Quick Links</h3>
+              <ul class="space-y-2 text-gray-300 text-base">
+                <li><a href="#"class="hover:text-pink-600">Home</a></li>
+                <li><a href="#"class="hover:text-pink-600">Shop</a></li>
+                <li><a href="#"class="hover:text-pink-600">Categories</a></li>
+                <li><a href="#"class="hover:text-pink-600">Products</a></li>
+                <li><a href="#"class="hover:text-pink-600">Top Deals</a></li>
+                <li><a href="#"class="hover:text-pink-600">Elements</a></li>
+                <li><a href="#"class="hover:text-pink-600">Contact</a></li>
+
+              </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div>
+              <h3 class="text-2xl font-semibold mb-4">Customer Service</h3>
+              <ul class="space-y-2 text-gray-300 text-base">
+                <li><a href="#"class="hover:text-pink-600">FAQs & Support</a></li>
+                <li><a href="#"class="hover:text-pink-600">Returns & Refunds</a></li>
+                <li><a href="#"class="hover:text-pink-600">Shipping Info</a></li>
+                <li><a href="#"class="hover:text-pink-600">Privacy Policy</a></li>
+                <li><a href="#"class="hover:text-pink-600">Terms of Service</a></li>
+                <li><a href="#"class="hover:text-pink-600">International Shipping</a></li>
+                
+
+              </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div>
+              <h3 class="text-2xl font-semibold mb-4">Join Our Newsletter</h3>
+              <p class="text-base text-gray-300 mb-4">Be the first to know about new arrivals and exclusive offers.</p>
+              <div class="flex items-center space-x-2">
+                <input type="email" placeholder="Enter your email" class="p-2 rounded w-full text-black">
+                <button class="bg-white text-black px-4 py-2 rounded">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Bottom bar with social icons -->
+          <div class="border-t border-gray-700 py-6 px-6 flex flex-col md:flex-row items-center justify-between text-lg text-gray-400">
+            <p>&copy; 2025 Elara Jewels. All rights reserved.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+              <a href="#" aria-label="Facebook" class="text-white hover:text-pink-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3.5l.5-4H14V7a1 1 0 011-1h3z" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram" class="text-white hover:text-pink-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm8 4h.01M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter" class="text-white hover:text-pink-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path d="M8 19c7.5 0 11.5-6.2 11.5-11.5v-.5A8.2 8.2 0 0022 4.3a8 8 0 01-2.3.6A4 2 0 0021.4 3a8.1 8.1 0 01-2.6 1 4.1 4.1 0 00-7 3.7A11.6 11.6 0 013 4.1a4 4 0 001.3 5.3A4.1 4.1 0 012 8.6v.1a4.1 4.1 0 003.3 4 4.2 4.2 0 01-1.9.1 4.1 4.1 0 003.8 2.9A8.3 8.3 0 012 17.3a11.6 11.6 0 006 1.7" />
+                </svg>
+              </a>
+              <a href="#" aria-label="WhatsApp" class="text-white hover:text-pink-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path d="M20.5 3.5a11.7 11.7 0 00-17 14.2l-1.2 4.3 4.5-1.2a11.6 11.6 0 0014-17.3zm-5.8 12.2c-.4.6-1.2.6-1.8.5-1.5-.5-3.2-1.8-4-3.3-.4-.8-.5-1.6.3-2.1.4-.3.9-.3 1.3-.2.3.1.7.6.9.9.2.2.3.5.2.7a.9.9 0 01-.2.5c-.2.2-.2.3 0 .5a6.3 6.3 0 002 1.6c.2.1.4.1.5-.1.2-.2.4-.6.6-.8.3-.3.6-.3.9 0 .3.2 1.3.6 1.4 1z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+        </footer>
+
+
+      
+    <!-- Link to External JS File -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
